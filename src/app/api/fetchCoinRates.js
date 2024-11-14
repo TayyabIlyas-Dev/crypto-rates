@@ -1,7 +1,7 @@
 // /pages/api/fetchCoinRates.js
 
 export default async function handler(req, res) {
-    const API_CHABI = '499da2201ed3b36e34bb0023526a4832';  // Replace this with your actual API key
+    const API_CHABI = '9c45c95bc4dbf5507442177061d8abeb';  // Replace this with your actual API key
     const apiUrl = `http://api.coinlayer.com/live?access_key=${API_CHABI}`;
   
     try {

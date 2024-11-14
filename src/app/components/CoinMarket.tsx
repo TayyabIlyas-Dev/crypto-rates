@@ -8,7 +8,7 @@ interface CoinData {
 }
 
 const CoinMarket = () => {
-  const API_CHABI = '9c45c95bc4dbf5507442177061d8abeb--';
+  const API_CHABI = '9c45c95bc4dbf5507442177061d8abeb';
   const [data, setData] = useState<CoinData | null>(null);
   const [coin1, setCoin1] = useState('BTC'); // Default coin 1
   const [coin2, setCoin2] = useState('ETH'); // Default coin 2

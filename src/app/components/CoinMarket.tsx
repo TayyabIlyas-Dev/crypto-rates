@@ -8,13 +8,12 @@ interface CoinData {
 }
 
 const CoinMarket = () => {
-  const API_CHABI = '499da2201ed3b36e34bb0023526a4832';
   const [data, setData] = useState<CoinData | null>(null);
   const [coin1, setCoin1] = useState('BTC'); // Default coin 1
   const [coin2, setCoin2] = useState('ETH'); // Default coin 2
 
   useEffect(() => {
-    fetch(`http://api.coinlayer.com/live?access_key=${API_CHABI}`)
+    fetch(`/api/fetchCoinRates`)
       .then((response) => response.json())
       .then((json_converted) => {
         setData(json_converted);

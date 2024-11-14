@@ -14,7 +14,7 @@ const CoinMarket = () => {
   const [coin2, setCoin2] = useState('ETH'); // Default coin 2
 
   useEffect(() => {
-    fetch(`http://api.coinlayer.com/live?access_key=${API_CHABI}`)
+    fetch(`https://api.coinlayer.com/live?access_key=${API_CHABI}`)
       .then((response) => response.json())
       .then((json_converted) => {
         setData(json_converted);

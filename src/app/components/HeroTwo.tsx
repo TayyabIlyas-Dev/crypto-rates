@@ -12,7 +12,7 @@ interface Token {
   name: string;
   price: string;
   change: string;
-  icon: any;
+  icon: React.ReactNode;
   isPositive: boolean;
 }
 

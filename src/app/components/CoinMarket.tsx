@@ -8,7 +8,7 @@ interface CoinData {
 }
 
 const CoinMarket = () => {
-  const API_CHABI = '9c45c95bc4dbf5507442177061d8abeb';
+  const API_CHABI = '9c45c95bc4dbf5507442177061d8abeb--';
   const [data, setData] = useState<CoinData | null>(null);
   const [coin1, setCoin1] = useState('BTC'); // Default coin 1
   const [coin2, setCoin2] = useState('ETH'); // Default coin 2
@@ -62,7 +62,7 @@ const CoinMarket = () => {
             />
           </div>
 
-            <div className="radiusMTL sm:radiusBL px-6 bg-[#49423b] sm:px-20 py-6 flex flex-col justify-center items-center borderBottomNone  borderRightNone borderTopNone border-[1px] border-white">
+            <div className="radiusMTL sm:radiusBL px-6 h-full  bg-[#49423b] sm:px-20 py-6 flex flex-col  items-center borderBottomNone  borderRightNone borderTopNone border-[1px] border-white">
               <div>{coin2}</div>
               <div className='text-[#e09800]'>{data && data.rates && data.rates[coin2] ? `$${data.rates[coin2]}` : 'Loading...'}</div>
             </div>

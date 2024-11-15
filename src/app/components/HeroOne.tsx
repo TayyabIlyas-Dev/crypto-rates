@@ -9,27 +9,27 @@ import CoinMarket from "./CoinMarket";
 const HeroOne = () => {
   
   return (
-    <div className="bg-[#2d2a27] text-white">
+    <div className="bg-[#2d2a27] text-white pb-8">
       <div className="grid grid-cols-6 md:grid-cols-12 gap-3 md:gap-8">
         <div className=" flex flex-col justify-center items-center gap-10 sm:gap-16 py-28 col-span-1 md:col-span-1 w-full your-div ">
           {/* 17% width on mobile, 12% width on medium and above */}
           <div>
             {" "}
-            <Link href={"/"}>
+            <Link href={"https://www.linkedin.com/in/tayyab-ilyas-ai-engineer/"}>
               {" "}
               <FaLinkedinIn className='hover:text-[#e09800]'/>
             </Link>
           </div>
           <div>
             {" "}
-            <Link href={"/"}>
+            <Link href={"https://www.facebook.com/vcraker.ilyas"}>
               {" "}
               <FaFacebookF className='hover:text-[#e09800]'/>
             </Link>
           </div>
           <div>
             {" "}
-            <Link href={"/"}>
+            <Link href={"https://www.instagram.com/syco_king9935/"}>
               {" "}
               <FaInstagram className='hover:text-[#e09800]'/>
             </Link>

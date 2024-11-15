@@ -1,4 +1,5 @@
 import HeroOne from "./components/HeroOne";
+import HeroTwo from "./components/HeroTwo";
 
 
 export default function Home() {
@@ -8,6 +9,9 @@ export default function Home() {
         <HeroOne/>
        </div>
        
+       <div>
+        <HeroTwo/>
+       </div>
    </div>
   );
 }

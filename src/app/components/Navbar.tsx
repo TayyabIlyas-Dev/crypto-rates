@@ -32,20 +32,20 @@ const Navbar = () => {
         <div className="hidden sm:block">
           <div className="flex justify-center items-center gap-5">
             <ul className="flex gap-8 text-xl font-medium">
-            <Link href="/favorite"><li><BsCurrencyExchange /></li></Link>
-          <Link href="/addToCart"><li><TbDeviceDesktopAnalytics /></li></Link>
-          <Link href="/about"><li ><LiaWalletSolid /></li></Link>
-          <Link href="/about"><li ><TbUserPentagon /></li></Link>
+            <Link href="#"><li><BsCurrencyExchange /></li></Link>
+          <Link href="#"><li><TbDeviceDesktopAnalytics /></li></Link>
+          <Link href="/login"><li ><LiaWalletSolid /></li></Link>
+          <Link href="/login"><li ><TbUserPentagon /></li></Link>
             </ul>
           </div>
         </div>
 
         {/* Right side icons */}
         <ul className="flex gap-5 text-xl pl-2 items-center sm:hidden">
-          <Link href="/favorite"><li><BsCurrencyExchange /></li></Link>
-          <Link href="/addToCart"><li><TbDeviceDesktopAnalytics /></li></Link>
-          <Link href="/about"><li ><LiaWalletSolid /></li></Link>
-          <Link href="/about"><li ><TbUserPentagon /></li></Link>
+          <Link href="#"><li><BsCurrencyExchange /></li></Link>
+          <Link href="#"><li><TbDeviceDesktopAnalytics /></li></Link>
+          <Link href="/login"><li ><LiaWalletSolid /></li></Link>
+          <Link href="/login"><li ><TbUserPentagon /></li></Link>
 
         </ul>
 
@@ -64,14 +64,14 @@ const Navbar = () => {
                     <SheetClose asChild><Link href="/">Home</Link></SheetClose>
                     <SheetClose asChild><Link href="/about">About</Link></SheetClose>
                     <SheetClose asChild><Link href="/contactus">Contact</Link></SheetClose>
-                    <SheetClose asChild><Link href="/blog">Blog</Link></SheetClose>
+                    <SheetClose asChild><Link href="/login">Analytics</Link></SheetClose>
                   </div>
 
                   {/* Icons in mobile menu */}
                   <div className="flex gap-6 text-xl  pt-3">
-                    <SheetClose asChild><Link href="/favorite"><FaRegHeart /></Link></SheetClose>
-                    <SheetClose asChild><Link href="/addToCart"><IoCartOutline /></Link></SheetClose>
-                    <SheetClose asChild><Link href="/about"><FaRegUser /></Link></SheetClose>
+                    <SheetClose asChild><Link href="#favorite"><FaRegHeart /></Link></SheetClose>
+                    <SheetClose asChild><Link href="#addToCart"><IoCartOutline /></Link></SheetClose>
+                    <SheetClose asChild><Link href="/login"><FaRegUser /></Link></SheetClose>
                   </div>
                 </SheetDescription>
               </SheetHeader>
@@ -81,7 +81,7 @@ const Navbar = () => {
 
         {/* Connect Wallet Link */}
         <div className="hidden sm:block">
-          <Link href="/" className="text-[#e09800] font-semibold">Connect Wallet</Link>
+          <Link href="/signup" className="text-[#e09800] font-semibold">Connect Wallet</Link>
         </div>
       </nav>
     </div>

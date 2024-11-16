@@ -17,14 +17,14 @@ interface Token {
 }
 
 const tokens: Token[] = [
-  { name: "BITCOIN", price: "$12536.2365", change: "5.36%", icon: <PiCurrencyBtcFill/>, isPositive: true },
-  { name: "POLYGON", price: "$12536.2365", change: "5.36%", icon: <SiPolygon/>, isPositive: true },
-  { name: "BINANCE", price: "$12536.2365", change: "-5.36%", icon: <TbBrandAirbnb/>, isPositive: false },
-  { name: "DOGE", price: "$12536.2365", change: "5.36%", icon: <SiDogecoin/>, isPositive: true },
-  { name: "TETHER", price: "$12536.2365", change: "-5.36%", icon: <SiTether/>, isPositive: false },
-  { name: "XRP", price: "$12536.2365", change: "5.36%", icon: <RiXrpLine/> , isPositive: true },
-  { name: "ETHERUM", price: "$12536.2365", change: "5.36%", icon: <SiEthereum/>, isPositive: true },
-  { name: "CARDANO", price: "$12536.2365", change: "5.36%", icon: <SiCardano/>, isPositive: true },
+  { name: "BITCOIN", price: "$90,667.00", change: "5.36%", icon: <PiCurrencyBtcFill/>, isPositive: true },
+  { name: "POLYGON", price: "$4,170.00", change: "5.36%", icon: <SiPolygon/>, isPositive: true },
+  { name: "BINANCE", price: "$0.0036", change: "-5.36%", icon: <TbBrandAirbnb/>, isPositive: false },
+  { name: "DOGE", price: "$52.47", change: "5.36%", icon: <SiDogecoin/>, isPositive: true },
+  { name: "TETHER", price: "$1.00", change: "-5.36%", icon: <SiTether/>, isPositive: false },
+  { name: "XRP", price: "$0.0036", change: "5.36%", icon: <RiXrpLine/> , isPositive: true },
+  { name: "ETHERUM", price: "$3,146.50", change: "5.36%", icon: <SiEthereum/>, isPositive: true },
+  { name: "CARDANO", price: "$0.71", change: "5.36%", icon: <SiCardano/>, isPositive: true },
 ];
 
 const HeroTwo: React.FC = () => {

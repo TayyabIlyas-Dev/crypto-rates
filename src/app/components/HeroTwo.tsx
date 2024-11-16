@@ -29,8 +29,9 @@ const tokens: Token[] = [
 
 const HeroTwo: React.FC = () => {
   return (
-    <section className="bg-[#36322e] text-white py-10 px-5">
- <h1 className=" text-[#e09800] text-3xl sm:text-5xl sm:px-12 font-black sm:font-bold sm:roboto text-center">
+   <div className="py-2">
+     <section className="bg-[#36322e] text-white  rounded-lg m-2 py-10 px-5">
+ <h1 className=" text-[#e09800] py-3 text-3xl sm:text-5xl sm:px-12 font-black sm:font-bold sm:roboto text-center">
  Exchangeable Tokens
             </h1>     
              <p className="text-sm sm:text-lg text-[#fefaefb0] mb-8 text-center py-3">Most top rated Cryptocurrency you can see here</p>
@@ -38,7 +39,7 @@ const HeroTwo: React.FC = () => {
         {tokens.map((token) => (
           <div
             key={token.name}
-            className="bg-[#e0990022] p-4 rounded-lg flex items-center justify-between"
+            className="bg-[#6d624a38] shadow-md p-4 rounded-lg flex items-center justify-between"
           >
             <div className="flex items-center space-x-4">
               <span className="text-2xl text-[#e09800]">{token.icon}</span>
@@ -58,6 +59,7 @@ const HeroTwo: React.FC = () => {
         ))}
       </div>
     </section>
+   </div>
   );
 };
 

@@ -5,13 +5,15 @@ import { FaFacebookF } from "react-icons/fa";
 import { FaInstagram } from "react-icons/fa";
 import { FaXTwitter } from "react-icons/fa6";
 import CoinMarket from "./CoinMarket";
+import { FaBtc } from "react-icons/fa";
+import { IoAnalyticsOutline } from "react-icons/io5";
 
 const HeroOne = () => {
   
   return (
-    <div className="bg-[#2d2a27] text-white pb-8">
+    <div className="bg-[#2d2a27] text-white pb-8  ">
       <div className="grid grid-cols-6 md:grid-cols-12 gap-3 md:gap-8">
-        <div className=" flex flex-col justify-center items-center gap-10 sm:gap-16 py-28 col-span-1 md:col-span-1 w-full your-div ">
+        <div className="relative flex flex-col justify-center items-center gap-10 sm:gap-16 py-28 col-span-1 md:col-span-1 w-full your-div ">
           {/* 17% width on mobile, 12% width on medium and above */}
           <div>
             {" "}
@@ -51,6 +53,15 @@ const HeroOne = () => {
               Updated Crypto Currency Rates Are Here.
             </h1>
           </div>
+   {/* left Icon Image */}
+           <div className="text-4xl text-[#8973434e] absolute sm:top-[48%] left-[28%] -rotate-45 ">
+            <FaBtc/>
+           </div>
+
+             {/* right Icon Image */}
+           <div className="text-7xl text-[#5e471547] absolute top-[30%] sm:top-[48%] right-[5%] -rotate-6 ">
+            <IoAnalyticsOutline/>
+           </div>
 
           {/* Register btn */}
           <div className="text-center py-3 font-semibold text-[#cac2ba] hover:hover:text-[#e09800]">

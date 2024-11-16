@@ -6,6 +6,7 @@ import { IoCartOutline } from 'react-icons/io5';
 import { MdOutlineMenuOpen } from "react-icons/md";
 import { TbDeviceDesktopAnalytics } from "react-icons/tb";
 import { TbUserPentagon } from "react-icons/tb";
+import { LiaWalletSolid } from "react-icons/lia";
 import {
   Sheet,
   SheetContent,
@@ -30,20 +31,22 @@ const Navbar = () => {
         {/* Center menu items - hidden on small screens */}
         <div className="hidden sm:block">
           <div className="flex justify-center items-center gap-5">
-            <ul className="flex gap-8 text-sm font-medium">
-              <Link href="/"><li>Home</li></Link>
-              <Link href="/about"><li>About</li></Link>
-              <Link href="/contactus"><li>Contact</li></Link>
-              <Link href="/blog"><li>Blog</li></Link>
+            <ul className="flex gap-8 text-xl font-medium">
+            <Link href="/favorite"><li><BsCurrencyExchange /></li></Link>
+          <Link href="/addToCart"><li><TbDeviceDesktopAnalytics /></li></Link>
+          <Link href="/about"><li ><LiaWalletSolid /></li></Link>
+          <Link href="/about"><li ><TbUserPentagon /></li></Link>
             </ul>
           </div>
         </div>
 
         {/* Right side icons */}
-        <ul className="flex gap-7 text-xl pl-4 items-center sm:hidden">
+        <ul className="flex gap-5 text-xl pl-2 items-center sm:hidden">
           <Link href="/favorite"><li><BsCurrencyExchange /></li></Link>
           <Link href="/addToCart"><li><TbDeviceDesktopAnalytics /></li></Link>
+          <Link href="/about"><li ><LiaWalletSolid /></li></Link>
           <Link href="/about"><li ><TbUserPentagon /></li></Link>
+
         </ul>
 
         {/* Mobile menu - Hamburger icon */}

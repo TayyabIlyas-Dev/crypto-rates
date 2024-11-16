@@ -27,7 +27,7 @@ const CoinMarket = () => {
     <>
       {/* Coin Rates section */}
       <div className="py-4">
-        <div className="grid grid-cols-2 h-full overflow-hidden bg-[#faf2e4] w-full max-w-[900px] rounded-xl mx-auto">
+        <div className="grid grid-cols-2 h-full overflow-hidden shadow-lg bg-[#faf2e4] w-full max-w-[900px] rounded-xl mx-auto">
           
           {/* Coin 1 */}
           <div className="1stCol">
